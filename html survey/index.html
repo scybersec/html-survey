@@ -4,28 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Survey</title>
-  </head>
+    <title>Online Survey</title>       
+</head>
   <section>
     <!--! This the header of the page-->
-    <header>Welcome to online survey</header>
+    <header> Welcome to online survey</header>
+    <!-- <img src="https://th.bing.com/th/id/R.753c821224bd085888f46ced4f390c81?rik=Gz%2bAyEHLleEeUw&pid=ImgRaw&r=0" height="80"> -->
+    <style>header {color: #3D550C; font-size: 90px;}</style>
   </section>
   <section>
   <body>
-    <h2>Please fill out the form below</h2>
-
+    <h2>Please fill out the form below </h2> 
+    <style>h2 {color: #3D550C ;}</style>
+    <style> body {background-color: #ECF87F; }</style>
     <!--! This is the form aspect of the page-->
     <section>
       <form action="">
         <div>
-          <label for="fname">First Name</label>
+            <label for="fname">First Name:</label>
           <input
             type="text"
             id="fname"
             placeholder="Enter you'r first name"
             required
           />
-          <label for="lname">Last Name</label>
+          <label for="lname">Last Name:</label>
           <input
             type="text"
             id="lname"
@@ -34,13 +37,21 @@
           />
         </div>
         <div>
-          <label for="phonenum">Phone number </label>
+          <label for="phonenum">Phone number: </label>
           <input
             type="tel"
             id="phonenum"
-            placeholder="Enter your phone number"
+            placeholder="(xxx-xxx-xxxx)"
             required
           />
+          <div>
+            <label for="email">Email: </label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
         </section>
           <section>
         </div>
@@ -53,9 +64,32 @@
           <input type="radio" id="no" name="option" value="no" />
           <label for="no">No</label>
         </div>
+    </div>
+    <h2>Do you live near Saint Peters university?</h2>
+    <div>
+      <input type="radio" id="yes" name="option1" value="yes" checked />
+      <label for="yes">Yes</label>
+    </div>
+    <div>
+      <input type="radio" id="no" name="option1" value="no" />
+      <label for="no">No</label>
+    </div>
     </section>
+    <div>
+        <h2>What the highest degree attain?</h2>
+        <label for="degree"></label>
+        <select name="degreecount" id="degree" required>
+        <option value="">--Pick one of the following--</option>
+        <option value="associate">Associate - 2 years</option>
+        <option value="bachelors">Bachelors - 4 years</option>
+        <option value="masters">Masters - 6 years</option>
+        <option value="doctoral">Doctoral - 8 years</option>
+    </select>
+
+    </div>
+    <button>Submit</button>
       </form>
     </section>
     <section></section>
   </body>
-</html>
+  </html>
